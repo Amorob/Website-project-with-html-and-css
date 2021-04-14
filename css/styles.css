@@ -84,6 +84,7 @@ ul.menu-main {
   align-items: center;
   text-align: center;
   justify-content: center;
+
   margin: 10px 0;
   padding: 20px 0;
 }
@@ -93,6 +94,7 @@ ul.menu-main {
   gap: 20px;
   padding: 20px;
 }
+
 .people img {
   width: 80%;
   border-radius: 50%;
@@ -176,6 +178,31 @@ form.talk-to-us button {
 }
 form.talk-to-us button:hover {
   background-color: blueviolet;
+}
+
+/* ABout page */
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+.text-about-us {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+.text-about-us img {
+  border-radius: 50%;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.text-about-us p {
+  padding: 0 10px;
+  margin: 0 10px;
 }
 /* Footer */
 .footer {

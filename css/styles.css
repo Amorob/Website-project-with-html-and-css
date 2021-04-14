@@ -65,7 +65,7 @@ ul.menu-main {
   font-weight: bold;
 }
 .navbar a:hover {
-  background-color: #ffffff;
+  background-color: cadetblue;
   color: #262626;
 }
 .navbar img {
@@ -159,6 +159,7 @@ ul.menu-main {
 form.talk-to-us input {
   width: 50%;
   padding: 20px;
+  border: 2px solid cadetblue;
 }
 form.talk-to-us input:hover {
   border: 2px solid blueviolet;
@@ -171,7 +172,7 @@ form.talk-to-us button {
   font-weight: bold;
   color: #ffffff;
   margin: 0 5px;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 form.talk-to-us button:hover {
   background-color: blueviolet;
@@ -186,4 +187,37 @@ form.talk-to-us button:hover {
   min-height: 100px;
   text-align: center;
   padding: 10px;
+}
+.text-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer a {
+  color: #ffffff;
+  padding: 10px;
+}
+.footer a:hover {
+  color: blue;
+}
+.footer h3 {
+  text-decoration: underline;
+  padding: 10px;
+}
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.quick-links ul {
+  text-align: left;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.social-icons img {
+  border-radius: 50%;
 }

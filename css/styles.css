@@ -221,3 +221,9 @@ form.talk-to-us button:hover {
 .social-icons img {
   border-radius: 50%;
 }
+.copyright-footer {
+  background-color: #979393;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}

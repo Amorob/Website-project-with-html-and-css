@@ -43,25 +43,37 @@
           <em>info@sateconsult.com.</em>
         </p>
         <form class="contact-form">
-          <h4 class="contact-form-heading">
-            You can also contact us through this form
-          </h4>
+          <div class="contact-form-heading">
+            <p>
+              You can also contact us through this form. Fields marked with
+              <span class="asterish-required">*</span>
+              are required
+            </p>
+          </div>
           <div class="contact-form-inputs">
             <div>
-              <label for="name">Your Name:</label>
-              <input type="text" />
+              <label for="name"
+                >Your Name <span class="asterish-required">*</span></label
+              >
+              <input type="text" required />
             </div>
             <div>
-              <label for="email">Email:</label>
-              <input type="email" name="" id="" />
+              <label for="email"
+                >Email <span class="asterish-required">*</span></label
+              >
+              <input type="email" name="" id="" required />
             </div>
             <div>
-              <label for="phone">Phone:</label>
-              <input type="text" />
+              <label for="phone"
+                >Phone <span class="asterish-required">*</span></label
+              >
+              <input type="text" required />
             </div>
             <div>
-              <label for="message">Your Message:</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <label for="message"
+                >Your Message <span class="asterish-required">*</span></label
+              >
+              <textarea name="" id="" cols="30" rows="8" required></textarea>
             </div>
             <button type="submit">Send Message</button>
           </div>

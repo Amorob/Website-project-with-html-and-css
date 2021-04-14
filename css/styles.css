@@ -248,10 +248,18 @@ form.talk-to-us button:hover {
   margin: 10px 0;
   padding: 10px;
 }
+.contact-form-inputs input:hover {
+  border: 2px solid blueviolet;
+}
 
 .contact-form-inputs textarea {
   display: inline-block;
   width: 100%;
+  resize: none;
+  padding: 10px;
+}
+.contact-form-inputs textarea:hover {
+  border: 2px solid blueviolet;
 }
 .contact-form button {
   padding: 10px;
@@ -264,6 +272,9 @@ form.talk-to-us button:hover {
 }
 .contact-form button:hover {
   background-color: blueviolet;
+}
+.asterish-required {
+  color: red;
 }
 /* Footer */
 .footer {

@@ -116,7 +116,66 @@ ul.menu-main {
 .heading-our-history {
   padding: 10px 0;
 }
-
+/* Banner section */
+.banner {
+  min-height: 200px;
+  background-image: url("../images/weather.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+  color: #ffffff;
+}
+/* content-banner */
+.content-banner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+.content-banner img {
+  width: 100%;
+  border-radius: 50%;
+}
+.text-content-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text-content-banner h2 {
+  padding: 10px 0;
+  text-decoration: underline;
+}
+/* talk-to-us*/
+.talk-to-us {
+  padding: 50px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+/* Form talk-to-us */
+form.talk-to-us input {
+  width: 50%;
+  padding: 20px;
+}
+form.talk-to-us input:hover {
+  border: 2px solid blueviolet;
+}
+form.talk-to-us button {
+  padding: 20px;
+  border: 0;
+  border-radius: 5px;
+  background-color: cadetblue;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 5px;
+  font-size: 1rem;
+}
+form.talk-to-us button:hover {
+  background-color: blueviolet;
+}
 /* Footer */
 .footer {
   background-color: #262626;
@@ -124,7 +183,7 @@ ul.menu-main {
   /* position: absolute; */
   bottom: 0;
   width: 100%;
-  height: 60px;
+  min-height: 100px;
   text-align: center;
   padding: 10px;
 }

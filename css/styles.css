@@ -108,20 +108,6 @@ ul.menu-main {
 }
 /* show-menu-on-mobile */
 
-.show-menu-on-mobile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* top: 0;
-  left: 0; */
-  margin: 0;
-  width: 50vw;
-  height: 100vh;
-  z-index: 2;
-  background-color: #262626;
-  color: #ffffff;
-}
 /* Container */
 .container {
   width: 75%;
@@ -311,7 +297,7 @@ form.talk-to-us button:hover {
 .contact-form-inputs textarea:hover {
   border: 2px solid blueviolet;
 }
-.contact-form button {
+.contact-form #submit {
   padding: 10px;
   background-color: cadetblue;
   color: #ffffff;
@@ -320,7 +306,7 @@ form.talk-to-us button:hover {
   font-size: 1.1rem;
   font-weight: bold;
 }
-.contact-form button:hover {
+.contact-form #submit:hover {
   background-color: blueviolet;
 }
 .asterish-required {
@@ -390,6 +376,10 @@ form.talk-to-us button:hover {
     display: none;
   }
   /* mobile menu */
+  /* show-on-mobile */
+  #show-on-mobile {
+    display: block;
+  }
 
   h1 {
     color: neons;

@@ -38,10 +38,7 @@
     <main class="contact container">
       <h1 class="heading-contact">Contact</h1>
       <div class="text-contact">
-        <p class="hide-text">
-          Have something in mind? or just want to say Hello, Reach out to us on
-          <em>info@sateconsult.com.</em>
-        </p>
+        <!-- contact form -->
         <form class="contact-form">
           <div class="contact-form-heading">
             <p>
@@ -55,27 +52,27 @@
               <label for="name"
                 >Your Name <span class="asterish-required">*</span></label
               >
-              <input type="text" required />
+              <input type="text" id="name" />
             </div>
             <div>
               <label for="email"
                 >Email <span class="asterish-required">*</span></label
               >
-              <input type="email" name="" id="" required />
+              <input type="email" id="email" />
             </div>
             <div>
               <label for="phone"
                 >Phone <span class="asterish-required">*</span></label
               >
-              <input type="text" required />
+              <input type="text" id="phone" />
             </div>
             <div>
               <label for="message"
                 >Your Message <span class="asterish-required">*</span></label
               >
-              <textarea name="" id="" cols="30" rows="8" required></textarea>
+              <textarea id="message" cols="30" rows="8"></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            <button type="submit" id="submit">Send Message</button>
           </div>
         </form>
       </div>
@@ -135,5 +132,6 @@
     <footer class="copyright-footer">
       <p>&copy; Sate Consult - 2021</p>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -19,6 +19,14 @@ a {
 ul {
   list-style: none;
 }
+/* hide */
+.hide {
+  display: none;
+}
+/* show */
+.show {
+  display: block;
+}
 /* Header */
 .header {
   height: 50vh;
@@ -41,7 +49,8 @@ ul {
   margin: auto; */
 }
 .welcome h1 {
-  color: blue;
+  /* color: blue; */
+  color: neons;
   padding: 10px;
   font-weight: bold;
 }
@@ -71,6 +80,47 @@ ul.menu-main {
 }
 .navbar img {
   width: 100px;
+}
+/* mobile menu */
+#show-on-mobile {
+  display: none;
+}
+.logo-show-on-mobile {
+  position: relative;
+}
+/* toogle menu - x */
+.toggle-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  font-size: 2rem;
+}
+.mobile-menu-open {
+  display: block;
+}
+.mobile-menu-close {
+  display: none;
+}
+/* logo-show-on-mobile */
+.logo-show-on-mobile {
+  vertical-align: middle;
+}
+/* show-menu-on-mobile */
+
+.show-menu-on-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* top: 0;
+  left: 0; */
+  margin: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: #262626;
+  color: #ffffff;
 }
 /* Container */
 .container {
@@ -325,4 +375,98 @@ form.talk-to-us button:hover {
   color: #ffffff;
   text-align: center;
   padding: 20px;
+}
+
+/* Media Queries */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  body {
+    font-size: 0.9rem;
+  }
+  /* desktop menu */
+  #hide-on-mobile {
+    display: none;
+  }
+  /* mobile menu */
+
+  h1 {
+    color: neons;
+    padding: 5px;
+    font-size: 1.3rem;
+  }
+  .hide-text {
+    display: none;
+  }
+  .show-text {
+    vertical-align: middle;
+  }
+  .people {
+    flex-direction: column;
+  }
+  .images-people {
+    grid-template-columns: 1fr;
+  }
+  .our-history {
+    grid-template-columns: 1fr;
+  }
+  .heading-our-history {
+    text-align: center;
+  }
+  .our-history p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .content-banner {
+    grid-template-columns: 1fr;
+  }
+  .talk-to-us {
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
+  form.talk-to-us input {
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+  }
+  form.talk-to-us button {
+    display: inline-block;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .text-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+  }
+  .text-footer h3 {
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 1rem;
+  }
+  .copyright-footer {
+    font-size: 0.7rem;
+  }
+  .text-about-us {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .text-about-us p {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  .our-services {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .heading-services {
+    text-align: center;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

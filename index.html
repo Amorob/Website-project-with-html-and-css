@@ -22,7 +22,20 @@
       <!-- Navbar -->
       <nav class="navbar">
         <!-- Menu -->
-        <ul class="menu-main">
+        <!-- mobile menu - show on mobile devices -->
+        <div class="mobile-menu">
+          <ul class="logo-show-on-mobile">
+            <img src="images/logo.jpg" alt="logo" id="logo-mobile" />
+            <span class="toggle-menu mobile-menu-open"
+              ><i class="fa fa-bars"></i
+            ></span>
+            <span class="toggle-menu mobile-menu-close"
+              ><i class="fa fa-times"></i
+            ></span>
+          </ul>
+        </div>
+        <!-- Main menu - show on large screens -->
+        <ul class="menu-main" id="hide-on-mobile">
           <li>
             <img src="images/logo.jpg" alt="logo" class="logo" />
           </li>
@@ -35,9 +48,14 @@
       <div class="welcome container">
         <h1>Welcome to Sate Consult</h1>
         <p>
-          Get your business transformed to meet the demands of your clients. Our
-          inspiring team is available to lead you to your goal. Reach out to us
-          anytime, anywhere!
+          <span class="hide-text">
+            Get your business transformed to meet the demands of your
+            clients.</span
+          >
+          <span class="show-text"
+            >Our inspiring team is available to lead you to your goal. Reach out
+            to us anytime, anywhere!</span
+          >
         </p>
       </div>
     </header>
@@ -45,7 +63,7 @@
     <main class="container">
       <section class="people">
         <div class="heading-people">
-          <h2>Walk to us</h2>
+          <h2 class="hide-text">Walk to us</h2>
           <p>Walk to us, Speak to us - with the gretest sense of comfort</p>
         </div>
         <div class="images-people">
@@ -79,7 +97,7 @@
         <div class="image-content-banner">
           <img src="images/banking.jpg" alt="" />
         </div>
-        <div class="text-content-banner">
+        <div class="text-content-banner hide-text">
           <h2>Go Digital with us</h2>
           <p>
             We've got the talents to lead your vision from ideation to the
@@ -128,5 +146,6 @@
     <footer class="copyright-footer">
       <p>&copy; Sate Consult - 2021</p>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

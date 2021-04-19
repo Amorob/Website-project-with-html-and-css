@@ -94,3 +94,22 @@ function clearFields() {
   phone.value = "";
   message.value = "";
 }
+
+// talk to us form validatio
+let yourMessage = document.getElementById("your-message");
+let talkToUs = document.getElementById("talk-to-us");
+talkToUs.addEventListener("click", function (e) {
+  if (yourMessage.value === "") {
+    alert("Invalid message. Check and try again");
+    return false;
+  }
+  alert(
+    "You said -: " +
+      yourMessage.value +
+      " right? " +
+      "Thank you for talking to us."
+  );
+  yourMessage.value = "";
+
+  e.preventDefault();
+});

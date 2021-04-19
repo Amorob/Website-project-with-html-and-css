@@ -52,25 +52,25 @@
               <label for="name"
                 >Your Name <span class="asterish-required">*</span></label
               >
-              <input type="text" id="name" />
+              <input type="text" id="name" required />
             </div>
             <div>
               <label for="email"
                 >Email <span class="asterish-required">*</span></label
               >
-              <input type="email" id="email" />
+              <input type="email" id="email" required />
             </div>
             <div>
               <label for="phone"
                 >Phone <span class="asterish-required">*</span></label
               >
-              <input type="text" id="phone" />
+              <input type="text" id="phone" required />
             </div>
             <div>
               <label for="message"
                 >Your Message <span class="asterish-required">*</span></label
               >
-              <textarea id="message" cols="30" rows="8"></textarea>
+              <textarea id="message" cols="30" rows="8" required></textarea>
             </div>
             <button type="submit" id="submit">Send Message</button>
           </div>
@@ -94,8 +94,10 @@
     </section>
     <section class="talk-to-us container">
       <form class="talk-to-us">
-        <input type="text" placeholder="Talk to us ..." />
-        <button type="submit" class="send-mail">Send Message</button>
+        <input type="text" placeholder="Talk to us ..." id="your-message" />
+        <button type="submit" class="send-mail" id="talk-to-us">
+          Send Message
+        </button>
       </form>
     </section>
     <footer class="footer">

@@ -364,8 +364,104 @@ form.talk-to-us button:hover {
 }
 
 /* Media Queries */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+}
 
 /* Smartphones (portrait and landscape) ----------- */
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) */
+@media only screen and (max-width: 768px) {
+  /* Styles */
+
+  /* desktop menu */
+  #hide-on-mobile {
+    display: none;
+  }
+  /* mobile menu */
+  /* show-on-mobile */
+  #show-on-mobile {
+    display: block;
+  }
+
+  .hide-text {
+    display: none;
+  }
+  .show-text {
+    vertical-align: middle;
+  }
+  .people {
+    flex-direction: column;
+  }
+  .images-people {
+    grid-template-columns: 1fr;
+  }
+  .our-history {
+    grid-template-columns: 1fr;
+  }
+  .heading-our-history {
+    text-align: center;
+  }
+  .our-history p {
+    text-align: center;
+  }
+
+  .content-banner {
+    grid-template-columns: 1fr;
+  }
+  .talk-to-us {
+    flex-direction: column;
+  }
+  form.talk-to-us input {
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+  }
+  form.talk-to-us button {
+    display: inline-block;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .text-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .text-footer h3 {
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 1rem;
+  }
+  .copyright-footer {
+    font-size: 0.8rem;
+  }
+  .about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .text-about-us p {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  .our-services {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .heading-services {
+    text-align: center;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
   body {
@@ -389,53 +485,26 @@ form.talk-to-us button:hover {
   .hide-text {
     display: none;
   }
-  .show-text {
-    vertical-align: middle;
-  }
-  .people {
-    flex-direction: column;
-  }
-  .images-people {
-    grid-template-columns: 1fr;
-  }
-  .our-history {
-    grid-template-columns: 1fr;
-  }
-  .heading-our-history {
-    text-align: center;
-  }
+
   .our-history p {
     font-size: 0.9rem;
     text-align: center;
   }
 
-  .content-banner {
+  /* .content-banner {
     grid-template-columns: 1fr;
-  }
+  } */
   .talk-to-us {
     flex-direction: column;
     font-size: 0.9rem;
   }
-  form.talk-to-us input {
-    display: inline-block;
-    width: 100%;
-    border-radius: 5px;
-  }
+
   form.talk-to-us button {
     display: inline-block;
     width: 100%;
     margin: 0.5rem 0;
   }
-  .text-footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    font-size: 0.8rem;
-  }
-  .text-footer h3 {
-    text-decoration: none;
-    color: #eeeeee;
-    font-size: 1rem;
-  }
+
   .copyright-footer {
     font-size: 0.7rem;
   }
@@ -443,20 +512,11 @@ form.talk-to-us button:hover {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .text-about-us p {
-    margin: 1rem 0;
-    padding: 0.5rem;
-    text-align: center;
-  }
-  .our-services {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
   .heading-services {
     text-align: center;
   }
-  .contact {
-    display: grid;
-    grid-template-columns: 1fr;
+  .contact-form {
+    font-size: 0.9rem;
+    font-weight: normal;
   }
 }
